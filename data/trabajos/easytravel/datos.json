@@ -1,0 +1,8 @@
+{
+"institucion":"Tecnólogo en Informática sede Paysandú",
+"taller":"Taller de Desarrollo de Aplicaciones Web con PHP",
+"proyecto":"Easy Travel",
+"descripcion":"Es una página web que te permite buscar paquetes de viaje con origen Uruguay, te muestra mucha info sobre destinos, hoteles y vuelos, podés leer reseñas sobre destinos que te interesen y hacer una reserva de un paquete.",
+"participantes":"Danilo Lopez, Ernesto Mello",
+"tecnologias":"PHP, Slim, HTML, CSS, JavaScript, Bootstrap, jQuery, AJAX, Scrum"
+}

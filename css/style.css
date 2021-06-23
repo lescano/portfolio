@@ -1,0 +1,433 @@
+html{
+  1rem = 16px;
+}
+
+body{
+  margin-right: 2rem;
+  margin-left: 2rem;
+  position: relative;
+  //font-family: cursive;
+}
+body i{
+  justify-self: center;
+}
+
+header{
+  background-color: lightgray;
+  position: fixed;
+  width: 100%;
+  right: 0;
+  top: 0;
+  left: 0;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  list-style: none;
+}
+
+nav ul li{
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+}
+nav ul li i{
+  font-size: 2rem;
+}
+
+#inicio{
+  height: 600px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+  grid-auto-rows: 3rem;
+  grid-template-areas: 
+    "a"
+    "b"
+    "c";
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+#inicio i{
+  grid-area: a;
+  align-self: start;
+}
+
+#inicio h1{
+  grid-area: b;
+  font-size: 3rem;
+}
+
+#inicio h3{
+  grid-area: c;
+}
+
+#sobremi{
+  display: grid;
+  grid-template-columns: 100px, 100px, 100px, 100px, 100px; 
+  grid-template-rows: 20px, 200px, 200px, 200px;
+  grid-template-areas: 
+    "a a a a a"
+    "b c c c c"
+    "d d d d d"
+    "e e e e f";
+  background: #ffeded;
+  padding: 1rem;
+  padding-top: 10%;
+}
+#sobremi article{
+  display: contents;
+}
+
+#sobremi i{
+  justify-self: center;
+  grid-area: a;
+}
+#sobremi article img:first-child {
+  grid-area: b;
+  align-self: center;
+  justify-self: center;
+  //background-color: blue;
+  border-radius: 25%;
+}
+#sobremi article #personal{
+  grid-area: c;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-top: solid 0.1px;
+  border-right: solid 0.1px;
+  border-bottom: solid 0.1px;
+}
+#sobremi #educacion{
+  grid-area: d;
+  padding: 1.5rem;
+  margin: 1rem;
+  background-image: url("img/paper-1074131_1920.jpg");
+}
+#sobremi #experiencia{
+  grid-area: e;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+#sobremi article img:last-child {
+  grid-area: f;
+  align-self: center;
+  justify-self: center;
+  //background-color: green;
+  width: 350px;
+  margin: 1rem;
+  border-radius: 10%;
+}
+#trabajos{
+  padding-top: 10%;
+}
+
+#trabajos #infotrabajos div{
+  margin-top: 10vh;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  border-left: solid #ffeded 2rem;
+}
+
+#show-modal{
+  text-align: center;
+  background-color: lightgray;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: black;
+  font-weight: 500px;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  text-decoration:none;
+}
+
+#show-modal:hover{
+  cursor:pointer;
+  color:white;
+  background: black;
+}
+
+#trabajos aside{
+  display: none;
+  background-color: rgba(0,0,0,0.3);
+  margin: auto;
+  position: fixed;
+  z-index: 9999999;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#trabajos aside article{
+  background-color: #f4f4f4;
+  margin: auto;
+  padding: 10%;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+}
+
+#trabajos aside article p:nth-of-type(1){
+  color: #999999;
+  font-size: 0.8rem;
+}
+#trabajos aside article p:nth-of-type(2){
+  color: #999999;
+  font-size: 0.8rem;
+}
+#trabajos aside article p:nth-of-type(3){
+  font-size:2rem;
+}
+
+.content-modal div{
+  width: auto;
+  height: 50px;
+  margin: 1%;
+  padding: 10px 20px;
+}
+
+#trabajos .close-modal{
+  color: lightgray;
+  float: right;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-style: bold;
+  font-family: sans-serif;
+}
+
+#trabajos .close-modal:hover{
+  color: black;
+  cursor: pointer;
+}
+
+#contacto{
+  width: 100%;
+  margin: 30vh auto;
+  padding: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: 
+    "a"
+    "b";
+}
+#contacto ul{
+  list-style: none;
+  margin: auto;
+  grid-area: b;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: 
+    "a b c d";
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+#contacto ul li{
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
+  color: black;
+  //width: 70%;
+  //height: 10rem;
+  border: black solid 0.1rem;
+  box-shadow: 0px 5px 8px 0 rgba(0,0,0,0.3),0 7px 20px 0 rgba(0,0,0,0.17);
+
+}
+
+#contacto ul li a{
+  color: black;
+  text-decoration: none;
+  align-self: center;
+  margin: auto;
+  padding: auto;
+}
+#contacto ul li a i{
+    font-size:xxx-large;
+  margin: 8px;
+}
+
+footer{
+  background-color: lightgray;
+  display: flex;
+  width: 100%;
+  right: 0;
+  top: 0;
+  left: 0;
+  justify-content: center;
+}
+
+footer ul{
+  float: right;
+  display: flex;
+  list-style: none;
+}
+
+footer ul li{
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+footer ul li a{
+  color: black;
+  text-decoration: none;
+}
+footer ul li i{
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 700px) {
+  header{
+    background-color: lightgray;
+    position: fixed;
+    width: 100%;
+  }
+
+  nav ul{
+    display: flex;
+    //justify-content: center;
+    //justify-items: center;
+    list-style: none;
+  }
+
+  nav ul li{
+    margin-right: 3rem;
+    margin-left: 0.5rem;
+  }
+
+  nav ul li a{
+    color: black;
+    text-decoration: none;
+  }
+  nav ul li i{
+    font-size: 2rem;
+  }
+  
+  #inicio{
+    //background-color: lightcoral;
+    height: 550px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+    grid-auto-rows: 4rem;
+    grid-template-areas: 
+      "a"
+      "b"
+      "b"
+      "c";
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+
+  #inicio i{
+    grid-area: a;
+    align-self: start;
+  }
+
+  #inicio h1{
+    //font-family: cursive;
+    font-size: 1.3rem;
+    grid-area: b;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #inicio h3{
+    grid-area: c;
+  }
+
+  #sobremi{
+    padding-top: 40%;
+    display: grid;
+    grid-template-columns: auto, auto, auto, auto, auto; 
+    grid-template-rows: 20px, 200px, 200px, 200px;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f";
+  }
+  #sobremi h2{
+    font-size: 1.2rem;
+  }
+  #sobremi h3{
+    font-size: 1.1rem;
+  }
+  #sobremi article{
+    display: contents;
+  }
+
+  #sobremi i{
+    justify-self: center;
+    grid-area: a;
+    margin-bottom: 2rem;
+  }
+  #sobremi article img:first-child {
+    border-radius: 50%;
+    margin: 1rem;
+    grid-area: b;
+    align-self: center;
+    justify-self: center;
+    background-color: blue;
+  }
+  #sobremi article #personal{
+    grid-area: c;
+    max-height: 
+  }
+  #sobremi #educacion{
+    grid-area: d;
+  }
+  #sobremi #experiencia{
+    grid-area: e;
+  }
+  #sobremi article img:last-child {
+    width: 200px;
+    border-radius: 10%;
+    grid-area: f;
+    align-self: center;
+    justify-self: center;
+    //background-color: green;
+  }
+  #trabajos{
+    padding-top: 40%;
+  }
+  #show-modal{
+    display: block;
+    margin: 1rem, 1rem, 1rem, 1rem;
+  }
+  #contacto{
+    padding-top: 40%;
+  }
+  #contacto ul{
+    display:block;
+  }
+  #contacto ul li{
+    margin: 0.3rem;
+    padding: 0.1rem;
+  } 
+  footer{
+    background-color: lightgray;
+    display: flex;
+    width: 100%;
+    right: 0;
+    top: 0;
+    left: 0;
+    justify-content: center;
+  }
+
+  footer ul{
+    display: none;
+  }
+}
